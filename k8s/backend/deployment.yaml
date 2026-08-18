@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: user-app
-          image: user-profile-app:v1
+          image: chetima/user-app:4
           ports:
             - containerPort: 3000
 
