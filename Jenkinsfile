@@ -97,9 +97,7 @@ pipeline {
         }
 
         stage('Verify Deployment') {
-            when {
-                branch 'main'
-            }
+        
             steps {
                 sh """
                     kubectl get deployment/user-app -n personal-project
