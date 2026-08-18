@@ -59,9 +59,6 @@ pipeline {
         }
 
         stage('Docker Login & Push') {
-            when {
-                branch 'main'
-            }
             steps {
                 echo '===== PUSHING TO DOCKER HUB ====='
                 withCredentials([
