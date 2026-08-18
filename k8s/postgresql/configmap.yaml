@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: personal-project
+data:
+  POSTGRES_DB: myappdb
